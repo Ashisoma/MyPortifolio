@@ -292,7 +292,13 @@ img{
   width: 95%;
 }
 .skills__css{
-  width: 85%;
+  width: 80%;
+}
+.skills__android{
+  width: 80%;
+}
+.skills__java{
+  width: 60%;
 }
 .skills__js{
   width: 65%;
