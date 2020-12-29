@@ -288,14 +288,15 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 95%;
-}
-.skills__css{
-  width: 80%;
-}
+
 .skills__android{
   width: 80%;
+}
+.skills__angular{
+  width: 70%;
+}
+.skills__spark{
+  width: 75%;
 }
 .skills__java{
   width: 60%;
