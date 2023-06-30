@@ -1,213 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <!-- CSS only -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="index.css">
 
 
-        <!-- =====BOX ICONS===== -->
-     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-      
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
 
 
-        <title>Onesmus Okali</title>
-    </head>
-    <body style="background-color: #020f32;">
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+
+    <title>Onesmus Okali</title>
+</head>
+
+<body style="background-color: #020f32;">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Onesmus</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <!--                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Onesmus</span><br>Software Developer
+                </h1>
+
+                <!-- <a href="#contact" class="button"> -->
+                    <a href="/assets/Onesmus Okali Resume.pdf" class="button" download>Download CV</a>
+                    
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/onesmus-okali-a77799202/" class="footer__icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/+254769007416" target="_blank" class="footer__icon"><i class='bx bxl-whatsapp'></i>
+                    <a href="https://github.com/Ashisoma" class="footer__icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="assets/img/onesmus.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">Onesmus</a>
+                    <h2 class="about__subtitle">I'm Onesmus</h2>
+                    <p class="about__text">I am junior android developer, studied at Moringa School. Passionate
+                        about mobile development using Android
+                        and Flutter for cross-platform. I have a thing for microservices with Spring Boot
+                        hoping to dive into DevOps soon.
+                    </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-<!--                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+            <div class="skills__container bd-grid row">
+                <div class="col">
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">I have experience in languages such as Dart, JavaScript,TypeScript,
+                        CSS, HTML5 Kotlin and Java. I have also worked with frameworks such as Angular,
+                        Spark and finally Flutter Android Java;
+                        which i have specialized more in. I have skill in PostgreSQL, MySQL and Firebase databases.</p>
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class="fab fa-java skills__icon col "></i>
+                            <p class="col pr-5">Java</p>
+                        </div>
+                        <div class="skills__bar skills__java">
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Onesmus</span><br>Software Developer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/onesmus-okali-a77799202/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href=" https://wa.me/message/OAS4DG7NDO7CK1" class="footer__icon"><i class='bx bxl-whatsapp'></i>
-                    <a href="https://github.com/Ashisoma" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/onesmus.png" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">60%</span> -->
+                        </div>
+                        <p>I have used Java in Spark and Android frameworks. However, i have used it more in Android.
+                        </p>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'm Onesmus</h2>
-                        <p class="about__text">I am junior android developer, studied at Moringa School. Passionate 
-                            about mobile development using Android
-                             and Flutter for cross-platform. I have a thing for microservices with Spring Boot 
-                            hoping to dive into DevOps soon.
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid row">          
-                    <div class="col">
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I have experience in other languages such as JavaScript,TypeScript, 
-                            CSS, HTML5 and Java. I have also worked with frameworks such as Angular, 
-                            Spark and finally Flutter Android Java; 
-                            which i have specialized more in. I have skill in PostgreSQL, MySQL and Firebase databases.</p>
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class="fab fa-java skills__icon col "></i>
-                                <p class="col pr-5">Java</p>
-                            </div>
-                            <div class="skills__bar skills__java">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">60%</span> -->
-                            </div>
-                            <p>I have used Java in Spark and Android frameworks. However, i have used it more in Android.</p>
+                    <div class="skills__data ">
+                        <div class="skills__names row p-3">
+                            <i class='bx bxl-javascript skills__icon col'></i>
+                            <p class="col">JavaScript</p>
                         </div>
-                        <div class="skills__data ">
-                            <div class="skills__names row p-3">
-                                <i class='bx bxl-javascript skills__icon col' ></i>
-                                <p class="col">JavaScript</p>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">65%</span> -->
-                            </div>
-                            <p>I have worked with JavaScript as a backend language in varous  projects such as <a href="https://ashisoma.github.io/Dilani-Studio/" target="_blank" rel="noopener noreferrer"> Delani</a>,
-                                 <a href="https://ashisoma.github.io/Pizza-Hub/" target="_blank" rel="noopener noreferrer">PizzaHub</a> and <a href="https://ashisoma.github.io/Akan/" target="_blank" rel="noopener noreferrer">Akan-Name</a>. All these projects had HTML and CSS as front ends. I also worked in a team on the <a href="https://hamsoace.github.io/Bikes-R-Us/" target="_blank" rel="noopener noreferrer">Bikes-R-Us</a></p>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class='bx bxl-android skills__icon col' ></i>
-                                <p class="col pr-3">Android - Java</p>
-                                <!-- <span class="skills__name">Android</span> -->
-                            </div>
-                            <div class="skills__bar skills__android">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">75%</span> -->
-                            </div>
-                            <p>Specializing in Android at Moringa i was able to work on consuming an API, using Firebase authentication and animations. I have made three apps currently.</p>
+                        <div class="skills__bar skills__js">
 
                         </div>
+                        <div>
+                            <!-- <span class="skills__percentage">65%</span> -->
+                        </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class='bx bxl-android skills__icon col' ></i>
-                                <p class="col pr-3">Flutter</p>
-                                <!-- <span class="skills__name">Android</span> -->
-                            </div>
-                            <div class="skills__bar skills__android">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">75%</span> -->
-                            </div>
-                            <p>I have done the Flutter Framework using the SQFlite and hive databases, I have also done integrations with Firebase and implementing REST apis. </p>
-
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class="fas fa-star skills__icon col"></i>
-                                <span class="skills__name"></span>
-                                <p class="col pr-3">Spring Boot</p>
-                            </div>
-                            <div class="skills__bar skills__spring">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">75%</span> -->
-                            </div>
-                            <p>I have am able to develop REST APIs, Actuator, Handling files, Swagger API documentation and deployment to AZURE using Github Actions in Spring Boot.
-                            For databases I have used PostgreSQL, MySQL, H2 and Sql2o. </p>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class='bx bxl-angular skills__icon col'></i>
-                                <span class="skills__name"></span>
-                                <p class="col pr-3">Angular </p>
-                            </div>
-                            <div class="skills__bar skills__angular">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">70%</span> -->
-                            </div>
-                            <p>Working with TypeScript from JavaScript was a twist but cool in a way. I have been able to consume get API calls using the framework. Projects with the framework include <a href="https://ashisoma.github.io/Git-Seach/" target="_blank" rel="noopener noreferrer">GitHub Search</a> and <a href="https://ashisoma.github.io/MyGiphs/" target="_blank" rel="noopener noreferrer">Giphs</a></p>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names row p-3">
-                                <i class="fa-brands fa-laravel skills__icon"></i>
-                                <span class="skills__name"></span>
-                                <p class="col pr-3">Laravel </p>
-                            </div>
-                            <div class="skills__bar skills__laravel">
-                                
-                            </div>
-                            <div>
-                                <!-- <span class="skills__percentage">70%</span> -->
-                            </div>
-                            <p>Working with TypeScript from JavaScript was a twist but cool in a way. I have been able to consume get API calls using the framework. Projects with the framework include <a href="https://ashisoma.github.io/Git-Seach/" target="_blank" rel="noopener noreferrer">GitHub Search</a> and <a href="https://ashisoma.github.io/MyGiphs/" target="_blank" rel="noopener noreferrer">Giphs</a></p>
-                        </div>
-                        
+                        <p>
+                            I have built Nodejs projects that I deployed to render and Azure. I use node for all manner
+                            of API's and
+                            customised backend services for the Flutter Mobile apps.
+                        </p>
                     </div>
-                    
-                    <div class="col pl-5">              
-                        <img src="assets/img/full-one.jpeg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class='bx bxl-android skills__icon col'></i>
+                            <p class="col pr-3">Android - Java</p>
+                            <!-- <span class="skills__name">Android</span> -->
+                        </div>
+                        <div class="skills__bar skills__android">
 
-            <!--===== WORK =====-->
-<!--             <section class="work section" id="work">
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">75%</span> -->
+                        </div>
+                        <p>Specializing in Android at Moringa i was able to work on consuming an API, using Firebase
+                            authentication and animations. I have made three apps currently.</p>
+
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class='bx bxl-android skills__icon col'></i>
+                            <p class="col pr-3">Flutter</p>
+                            <!-- <span class="skills__name">Android</span> -->
+                        </div>
+                        <div class="skills__bar skills__android">
+
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">75%</span> -->
+                        </div>
+                        <p>I have done the Flutter Framework using the SQFlite and hive databases, I have also done
+                            integrations with Firebase and implementing REST apis. </p>
+
+                    </div>
+
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class="fas fa-star skills__icon col"></i>
+                            <span class="skills__name"></span>
+                            <p class="col pr-3">Spring Boot</p>
+                        </div>
+                        <div class="skills__bar skills__spring">
+
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">75%</span> -->
+                        </div>
+                        <p>I have am able to develop REST APIs, Actuator, Handling files, Swagger API documentation and
+                            deployment to AZURE using Github Actions in Spring Boot with PostgreSQL, MySQL, H2 and Sql2o
+                            as databases. </p>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class='bx bxl-angular skills__icon col'></i>
+                            <span class="skills__name"></span>
+                            <p class="col pr-3">Angular </p>
+                        </div>
+                        <div class="skills__bar skills__angular">
+
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">70%</span> -->
+                        </div>
+                        <p>Workied on API calls using the framework. Projects with the framework include <a
+                                href="https://ashisoma.github.io/Git-Seach/" target="_blank"
+                                rel="noopener noreferrer">GitHub Search</a> and <a
+                                href="https://ashisoma.github.io/MyGiphs/" target="_blank"
+                                rel="noopener noreferrer">Giphs</a></p>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names row p-3">
+                            <i class="fa-brands fa-laravel skills__icon"></i>
+                            <span class="skills__name"></span>
+                            <p class="col pr-3">Laravel </p>
+                        </div>
+                        <div class="skills__bar skills__laravel">
+
+                        </div>
+                        <div>
+                            <!-- <span class="skills__percentage">70%</span> -->
+                        </div>
+                        <p>I have done back end work for building API's and integrating in house web portals using PHP
+                            and Laravel.
+                    </div>
+
+                </div>
+
+                <div class="col pl-5">
+                    <img src="assets/img/full-one.jpeg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <!--             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
@@ -241,38 +260,40 @@
                 </div>
             </section> -->
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form class="contact__form"   action="https://formspree.io/f/xrgoodrj"
-                    method="POST">
-                        <input type="text" placeholder="Name" name="name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input" name="_replyto">
-                        <textarea name="message" id="" cols="0" rows="10" class="contact__input" ></textarea>
-                        <button type="submit" value="Enviar" class="contact__button button">Submit</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Onesmus</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/onesmus-okali-a77799202/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://web.facebook.com/ashisoma.okal/" class="footer__icon"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://github.com/Ashisoma" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            <div class="contact__container bd-grid">
+                <form class="contact__form" action="https://formspree.io/f/xrgoodrj" method="POST">
+                    <input type="text" placeholder="Name" name="name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input" name="_replyto">
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <button type="submit" value="Enviar" class="contact__button button">Submit</button>
+                </form>
             </div>
-            <p>&#169; 2023 copyright all right reserved</p>
-        </footer>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Onesmus</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/onesmus-okali-a77799202/" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://web.facebook.com/ashisoma.okal/" class="footer__icon"><i
+                    class='bx bxl-facebook-circle'></i></a>
+            <a href="https://github.com/Ashisoma" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+        <p>&#169; 2023 copyright all right reserved</p>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/scrpit.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/scrpit.js"></script>
+</body>
+
 </html>
